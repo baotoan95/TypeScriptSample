@@ -1,0 +1,22 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Learning TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "dependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baotoan95/TypeScriptSample.git"
+  },
+  "author": "BTIT95",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baotoan95/TypeScriptSample/issues"
+  },
+  "homepage": "https://github.com/baotoan95/TypeScriptSample#readme"
+}
