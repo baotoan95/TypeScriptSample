@@ -55,4 +55,25 @@ var displayColors = function () {
 };
 displayColors('Blue');
 displayColors('Red', 'Gray');
+// Boc tach mang ra bien
+var employees = ['A', 'B', 'C', 'D'];
+var emp2 = employees[1], emp3 = employees.slice(2);
+console.log(emp2);
+console.log(emp3);
+// Boc tach du lieu tu object
+var emp = {
+    edu: "NLU",
+    clzz: "CD13TH",
+    level: 3
+};
+var edu = emp.edu, clazz = emp.clzz, level = emp.level;
+console.log(edu);
+console.log(clazz);
+console.log(level);
+// For of
+var names = ['Toan', 'Tuan', 'Huy', 'Quang'];
+for (var _i = 0, names_1 = names; _i < names_1.length; _i++) {
+    var name_1 = names_1[_i];
+    console.log(name_1);
+}
 //# sourceMappingURL=hoisting.js.map

@@ -65,3 +65,27 @@ let displayColors = function(...colors:string[]) {
 
 displayColors('Blue');
 displayColors('Red', 'Gray');
+
+
+// Boc tach mang ra bien
+let employees = ['A', 'B', 'C', 'D'];
+let [, emp2, ...emp3] = employees;
+console.log(emp2);
+console.log(emp3);
+
+// Boc tach du lieu tu object
+let emp = {
+    edu: "NLU",
+    clzz: "CD13TH",
+    level: 3
+}
+let {edu, clzz: clazz, level} = emp;
+console.log(edu);
+console.log(clazz);
+console.log(level);
+
+// For of
+let names = ['Toan', 'Tuan', 'Huy', 'Quang'];
+for(let name of names) {
+    console.log(name);
+}
