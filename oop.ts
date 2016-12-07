@@ -1,5 +1,7 @@
 class Student {
-    constructor(name) {
+    public name: string;
+
+    constructor(name:string, public age:number) {
         this.name = name;
     }
 
@@ -8,14 +10,13 @@ class Student {
     }
 
     static talk() {
-        console.log(this.name + ' is talking...');
+        console.log('Student is talking...');
     }
 }
 
 class Employee extends Student{
-    constructor(name) {
-        super(name);
-        console.log(name);
+    constructor(name:string, age:number) {
+        super(name, age);
     }
 
     run() {
@@ -23,7 +24,7 @@ class Employee extends Student{
     }
 }
 
-let student = new Student('Bao Toan');
+let student = new Student('Bao Toan', 21);
 student.run();
 
 console.log(student.run === Student.prototype.run);
@@ -31,5 +32,5 @@ console.log(student.run === Student.prototype.run);
 Student.talk();
 
 // Create Employee
-let empl = new Employee('Hong Tham');
+let empl = new Employee('Hong Tham', 33);
 empl.run();

@@ -4,33 +4,33 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Student = (function () {
-    function Student(name) {
+    function Student(name, age) {
+        this.age = age;
         this.name = name;
     }
     Student.prototype.run = function () {
         console.log(this.name + ' is running...');
     };
     Student.talk = function () {
-        console.log(this.name + ' is talking...');
+        console.log('Student is talking...');
     };
     return Student;
 }());
 var Employee = (function (_super) {
     __extends(Employee, _super);
-    function Employee(name) {
-        _super.call(this, name);
-        console.log(name);
+    function Employee(name, age) {
+        _super.call(this, name, age);
     }
     Employee.prototype.run = function () {
         _super.prototype.run.call(this);
     };
     return Employee;
 }(Student));
-var student = new Student('Bao Toan');
+var student = new Student('Bao Toan', 21);
 student.run();
 console.log(student.run === Student.prototype.run);
 Student.talk();
 // Create Employee
-var empl = new Employee('Hong Tham');
+var empl = new Employee('Hong Tham', 33);
 empl.run();
 //# sourceMappingURL=oop.js.map
